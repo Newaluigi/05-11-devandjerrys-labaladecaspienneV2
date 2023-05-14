@@ -1,0 +1,183 @@
+.allPageUser {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  .titleHeadEshop {
+    font-family: var(--font1);
+    font-size: 2em;
+    color: var(--main-color);
+    margin-top: 9vh;
+    margin-bottom: 0;
+  }
+
+  .lineTitleEshop {
+    width: 50vw;
+  }
+  .pageUser {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .infoPage {
+      display: flex;
+      flex-direction: column;
+
+      .toutContenaire {
+        display: flex;
+        justify-content: space-around;
+
+        .userInfo {
+          display: flex;
+          flex-direction: column;
+          .userInfoSuite {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .coinHaut {
+              z-index: -1;
+              display: flex;
+
+              .coinHG {
+                width: 50%;
+              }
+              .coinHD {
+                width: 50%;
+              }
+            }
+            input {
+              width: 277px;
+              text-align: center;
+              font-family: var(--font2);
+              color: white;
+              font-size: 20px;
+              background-color: var(--third-color);
+              border: none;
+              border-radius: 20px;
+            }
+            textarea {
+              text-align: center;
+              font-family: var(--font2);
+              font-size: 20px;
+              background-color: var(--third-color);
+              color: white;
+            }
+            select {
+              font-family: var(--font2);
+              font-size: 20px;
+              background-color: var(--third-color);
+              color: white;
+            }
+            .allEncart {
+              margin-bottom: -240px;
+              margin-top: -240px;
+              z-index: 1;
+              display: flex;
+              overflow-y: auto;
+              height: 600px;
+              width: 400px;
+              flex-direction: column;
+              align-items: center;
+              .encart {
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+                align-items: center;
+                margin-right: 0;
+                .encartSousTitre {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+            .coinBas {
+              z-index: -1;
+              display: flex;
+
+              .coinBG {
+                width: 50%;
+              }
+              .coinBD {
+                width: 50%;
+              }
+            }
+          }
+        }
+        .commande {
+          display: flex;
+          flex-direction: column;
+
+          .divCommande {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .cadreHaut {
+              z-index: -1;
+              display: flex;
+
+              .coinHG {
+                width: 50%;
+              }
+              .coinHD {
+                width: 50%;
+              }
+            }
+            .descriptCommande {
+              margin-bottom: -240px;
+              margin-top: -240px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              height: 600px;
+              overflow-y: auto;
+            }
+            .cadreBas {
+              z-index: -1;
+              display: flex;
+
+              .coinBG {
+                width: 50%;
+              }
+              .coinBD {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1375px) {
+  .toutContenaire {
+    flex-direction: column;
+    .userInfo {
+      margin-bottom: 50px;
+    }
+  }
+}
+/* Sélectionne la scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Définit la couleur de fond */
+::-webkit-scrollbar {
+  background-color: #f5f5f5;
+}
+
+/* Définit la couleur de la barre de défilement */
+::-webkit-scrollbar-thumb {
+  background-color: #1f1e1e;
+}
+
+/* Définit l'apparence de la piste */
+::-webkit-scrollbar-track {
+  background-color: #383737;
+  border-radius: 3px;
+}
+
+/* Définit le rayon de courbure des coins de la barre de défilement */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}

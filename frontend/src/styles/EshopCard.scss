@@ -1,0 +1,99 @@
+.Eshop {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // padding: 50px;
+
+  .Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //taille image
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
+
+    .ArtImage {
+      //taille image
+      height: 400px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: drop-shadow(4px 5px 3px var(--secondary-color));
+      border-radius: 280px 280px 0px 0px;
+      // box-shadow: inset 0 0 2px 3px rgba($color: #ffffff, $alpha: 100%),
+      //   0 0 30px 5px rgba($color: #ffffff, $alpha: 0.35);
+    }
+
+    .Frame {
+      //Taille image
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 280px 280px 0px 0px;
+    }
+  }
+  .E-Star {
+    width: 98px;
+    position: relative;
+    bottom: 78px;
+  }
+  .Arti-name {
+    position: relative;
+    top: -35px;
+    filter: drop-shadow(8px 11px 2px var(--background-color));
+    z-index: 1;
+    color: var(--main-color);
+    font-family: var(--font3);
+    font-size: var(--desktop-size4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    // h2 {
+    //   width: 154px;
+    // }
+  }
+
+  .Eshop-Price {
+    // position: relative;
+
+    background-image: url("../assets/Images/etiquette.png");
+    background-position: center;
+    background-size: 100%;
+    min-width: 116px;
+    background-repeat: no-repeat;
+    // opacity: 0;
+    // transition: opacity 0.3s ease-in-out;
+    p {
+      font-weight: 700;
+      opacity: 1;
+      color: var(--secondary-color);
+      font-family: var(--font1);
+      font-size: 36px;
+      filter: drop-shadow(4px 5px 3px var(--secondary-color));
+      text-align: center;
+      justify-content: center;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+.Eshop {
+  .price p,
+  .Arti-name {
+    filter: drop-shadow(1px 1px 0px var(--secondary-color));
+    opacity: 1;
+  }
+  .Eshop-Price {
+  }
+  .ArtImage {
+    filter: drop-shadow(8px 11px 10px var(--third-color));
+  }
+}
+
+@media (max-width: 560px) {
+  .Eshop {
+    margin: 0;
+  }
+}

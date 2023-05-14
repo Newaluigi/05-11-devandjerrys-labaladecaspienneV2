@@ -1,0 +1,89 @@
+/// TITLE HEAD ///
+.Artifacts {
+  .divHeadEshop {
+    .titleHeadEshop {
+      font-family: var(--font1);
+      font-size: var(--desktop-size1);
+      color: var(--main-color);
+      margin-top: 9vh;
+      margin-bottom: 0;
+    }
+    .lineTitleEshop {
+      width: 50vw;
+    }
+  }
+  .mainDivEshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+    margin: 3vw 5vw 0 5vw;
+    .divAllFilters {
+      width: 100%;
+      .themeListFilter {
+        display: flex;
+        flex-direction: column;
+
+        .selectStyle {
+          border: 3px solid #804000;
+          padding: 0.2em;
+          appearance: auto;
+          margin-top: 5px;
+        }
+      }
+    }
+    .divArtifactsEshop {
+      width: 88%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+
+      .eshop-card-wrapper {
+        flex: 0 0 calc(33.333% - 2%);
+        margin-right: 2%;
+        margin-bottom: 2%;
+      }
+
+      .articleNone {
+        color: var(--main-color);
+        font-family: var(--font1);
+        font-size: larger;
+        font-weight: bold;
+        margin: 10%;
+        padding: 20px;
+        text-shadow: 1px 1px 2px black;
+      }
+    }
+  }
+}
+
+.filter-artifact {
+  padding-bottom: 20px;
+}
+.labelSelect {
+  font-size: 30px;
+  text-align: center;
+  color: var(--main-color);
+}
+@media (max-width: 560px) {
+  .Artifacts {
+    .lineTitleEshop {
+      width: 55vw;
+    }
+    .titleHeadEshop {
+      margin-top: 0vh;
+      font-size: 1.5em;
+    }
+    .divAllFilters {
+      width: auto;
+      .labelSelect {
+        font-size: 1em;
+      }
+    }
+    .divArtifactsEshop {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
